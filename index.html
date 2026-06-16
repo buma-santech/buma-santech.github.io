@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BuMa - Inventory, Recipes & Finance Management Offline</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <meta name="description" content="Manage your business intelligently and 100% offline. Control inventory with recipes, cash flow, bank accounts, customers and suppliers without internet with BuMa.">
+    <meta name="keywords" content="business manager, inventory control, manufacturing recipes, SME finance, offline stock control, sales app, buma, buma app">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="BuMa - Inventory, Recipes & Finance Management Offline">
+    <meta property="og:description" content="Manage your business intelligently and 100% offline. Control your inventory with manufacturing recipes, cash flow, banks and checking accounts all in one place with BuMa.">
+    <meta property="og:image" content="assets/app_icon.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:title" content="BuMa - Inventory, Recipes & Finance Management Offline">
+    <meta property="twitter:description" content="Manage your business intelligently and 100% offline. Control your inventory with manufacturing recipes, cash flow, banks and checking accounts all in one place with BuMa.">
+    <meta property="twitter:image" content="assets/app_icon.png">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <header class="navbar" id="navbar">
+        <div class="navbar-container">
+            <a href="#" class="navbar-logo" id="nav-logo">
+                <img src="assets/app_icon.png" alt="BuMa Logo" class="logo-img">
+                <span class="logo-text">BuMa</span>
+            </a>
+
+            <button class="menu-toggle" id="menu-toggle" aria-label="Open navigation menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+
+            <nav class="nav-menu" id="nav-menu">
+                <a href="#features" class="nav-link">Features</a>
+                <a href="#simulator" class="nav-link">Simulator</a>
+                <a href="#calculator" class="nav-link">Calculator</a>
+                <a href="#faq" class="nav-link">FAQ</a>
+                <a href="#download" class="btn btn-primary nav-cta">Download Free</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero" id="hero">
+            <div class="hero-container">
+                <div class="hero-content">
+                    <span class="badge">🚀 Offline-First Business Management</span>
+                    <h1 class="hero-title">Your business under control. <span class="gradient-text">In your hand.</span></h1>
+                    <p class="hero-description">
+                        Manage your sales, purchases, complex inventories with recipes, cash flow and customers. All from a single app that works 100% without internet and protects your privacy.
+                    </p>
+                    <div class="hero-ctas">
+                        <a href="#download" class="btn btn-primary">Get the App</a>
+                        <a href="#simulator" class="btn btn-secondary">See how it works</a>
+                    </div>
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <span class="stat-number">100%</span>
+                            <span class="stat-label">Offline (No Internet)</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">0</span>
+                            <span class="stat-label">Mandatory Accounts</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">10+</span>
+                            <span class="stat-label">Units of Measure</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero-visual">
+                    <div class="phone-mockup-wrapper">
+                        <div class="phone-mockup">
+                            <div class="phone-screen">
+                                <div class="phone-header">
+                                    <span class="phone-title">BuMa</span>
+                                    <div class="phone-user-badge">Main Cash</div>
+                                </div>
+                                <div class="phone-content-preview">
+                                    <div class="mock-card mock-balance-card">
+                                        <span class="mock-card-label">TOTAL BALANCE</span>
+                                        <span class="mock-card-value">$24,580.00</span>
+                                        <div class="mock-trend positive">▲ +12.5% this month</div>
+                                    </div>
+                                    <div class="mock-grid-2">
+                                        <div class="mock-card mini-card">
+                                            <span class="mini-label">Sales</span>
+                                            <span class="mini-val text-green">$3,120</span>
+                                        </div>
+                                        <div class="mock-card mini-card">
+                                            <span class="mini-label">Expenses</span>
+                                            <span class="mini-val text-red">$840</span>
+                                        </div>
+                                    </div>
+                                    <div class="mock-card mock-chart-card">
+                                        <span class="mock-card-label">Sales Summary</span>
+                                        <div class="mock-chart-bars">
+                                            <div class="bar-col" style="height: 40%"></div>
+                                            <div class="bar-col" style="height: 60%"></div>
+                                            <div class="bar-col active" style="height: 85%"></div>
+                                            <div class="bar-col" style="height: 50%"></div>
+                                            <div class="bar-col" style="height: 70%"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="glowing-orb"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Grid Section -->
+        <section class="features" id="features">
+            <div class="section-header">
+                <span class="badge-alt">Business Power</span>
+                <h2 class="section-title">Everything your business needs to grow</h2>
+                <p class="section-subtitle">Designed to be fast, intuitive, and work without monthly cloud subscriptions.</p>
+            </div>
+
+            <div class="features-grid">
+                <!-- Card 1: Inventory & Recipes -->
+                <div class="feature-card" id="feat-inventory">
+                    <div class="feature-icon">📦</div>
+                    <h3 class="feature-card-title">Inventory & Recipes</h3>
+                    <p class="feature-card-text">
+                        Control stock, prices and margins. Enable the <strong>recipe (formula)</strong> for manufacturing: when selling a product, individual inputs are automatically deducted.
+                    </p>
+                </div>
+
+                <!-- Card 2: Accounts & Banks -->
+                <div class="feature-card" id="feat-finance">
+                    <div class="feature-icon">💰</div>
+                    <h3 class="feature-card-title">Accounts & Banks</h3>
+                    <p class="feature-card-text">
+                        Manage multiple payment accounts independently (main cash, bank accounts, cards). Transfer between accounts and view your consolidated balance.
+                    </p>
+                </div>
+
+                <!-- Card 3: Customers & Suppliers -->
+                <div class="feature-card" id="feat-contacts">
+                    <div class="feature-icon">👥</div>
+                    <h3 class="feature-card-title">Customers & Suppliers</h3>
+                    <p class="feature-card-text">
+                        Manage contacts with their respective checking accounts. Record credit sales, partial payments and view debtor or creditor balances instantly.
+                    </p>
+                </div>
+
+                <!-- Card 4: History & Reports -->
+                <div class="feature-card" id="feat-history">
+                    <div class="feature-icon">📊</div>
+                    <h3 class="feature-card-title">History & Analytics</h3>
+                    <p class="feature-card-text">
+                        Complete history of sales, purchases, income and expenses. Filter by custom date ranges, cancel transactions and generate reports in seconds.
+                    </p>
+                </div>
+
+                <!-- Card 5: Offline-First -->
+                <div class="feature-card" id="feat-offline">
+                    <div class="feature-icon">🛡️</div>
+                    <h3 class="feature-card-title">100% Local & Private</h3>
+                    <p class="feature-card-text">
+                        Works without internet. Your data never leaves your device. Export backups to local JSON files and restore them whenever you want.
+                    </p>
+                </div>
+
+                <!-- Card 6: Multi-Business -->
+                <div class="feature-card" id="feat-multibusiness">
+                    <div class="feature-icon">🏢</div>
+                    <h3 class="feature-card-title">Multiple Businesses</h3>
+                    <p class="feature-card-text">
+                        Have more than one store or project? Create and manage multiple business profiles within the same application and switch between them with a single tap.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Interactive App Simulator Section -->
+        <section class="simulator-section" id="simulator">
+            <div class="section-header">
+                <span class="badge-alt">Try the Experience</span>
+                <h2 class="section-title">Explore the App Interface</h2>
+                <p class="section-subtitle">Tap the tabs to see how your business information is organized and displayed.</p>
+            </div>
+
+            <div class="simulator-container">
+                <!-- Tabs Selector -->
+                <div class="simulator-tabs" role="tablist" aria-label="App screens">
+                    <button class="tab-btn active" id="tab-dashboard" role="tab" aria-selected="true" aria-controls="panel-dashboard">
+                        📊 Dashboard
+                    </button>
+                    <button class="tab-btn" id="tab-inventory" role="tab" aria-selected="false" aria-controls="panel-inventory">
+                        📦 Inventory
+                    </button>
+                    <button class="tab-btn" id="tab-recipes" role="tab" aria-selected="false" aria-controls="panel-recipes">
+                        🍳 Recipes/Formulas
+                    </button>
+                    <button class="tab-btn" id="tab-accounts" role="tab" aria-selected="false" aria-controls="panel-accounts">
+                        💳 Banks & Cards
+                    </button>
+                    <button class="tab-btn" id="tab-contacts" role="tab" aria-selected="false" aria-controls="panel-contacts">
+                        👥 Customers/Suppliers
+                    </button>
+                </div>
+
+                <!-- Simulated Device Screen -->
+                <div class="simulator-display">
+                    <div class="device-notch"></div>
+                    <div class="device-body">
+                        <!-- Panel Dashboard -->
+                        <div class="sim-panel active" id="panel-dashboard" role="tabpanel" aria-labelledby="tab-dashboard">
+                            <div class="app-screen-header">
+                                <div class="header-top">
+                                    <span class="app-logo-mini">BuMa</span>
+                                    <span class="app-title-main">My Coffee Shop</span>
+                                </div>
+                                <div class="quick-stats-row">
+                                    <div class="quick-stat">
+                                        <span class="q-label">Net Capital</span>
+                                        <span class="q-val">$18,450.00</span>
+                                    </div>
+                                    <div class="quick-stat">
+                                        <span class="q-label">Today's Sales</span>
+                                        <span class="q-val text-green">+$450.00</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="app-screen-body">
+                                <div class="app-card">
+                                    <h4 class="app-card-title">Cash Summary</h4>
+                                    <div class="financial-summary-row">
+                                        <div class="fin-item">
+                                            <span class="fin-lbl">Income</span>
+                                            <span class="fin-val text-green">$3,250.00</span>
+                                        </div>
+                                        <div class="fin-item">
+                                            <span class="fin-lbl">Expenses</span>
+                                            <span class="fin-val text-red">$1,100.00</span>
+                                        </div>
+                                        <div class="fin-item">
+                                            <span class="fin-lbl">Profit</span>
+                                            <span class="fin-val text-blue">$2,150.00</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="app-card">
+                                    <h4 class="app-card-title">Inventory Alerts</h4>
+                                    <div class="alert-list-item warning">
+                                        <span class="alert-indicator">⚠️</span>
+                                        <div class="alert-details">
+                                            <span class="alert-name">Coffee Beans (Arabica)</span>
+                                            <span class="alert-desc">1.5 kg left (Min: 5.0 kg)</span>
+                                        </div>
+                                        <span class="badge-red">Low Stock</span>
+                                    </div>
+                                </div>
+                                <div class="app-card">
+                                    <h4 class="app-card-title">Top Selling Products</h4>
+                                    <div class="top-product-row">
+                                        <span class="prod-position">1</span>
+                                        <span class="prod-name">Capuccino XL</span>
+                                        <span class="prod-sales">184 u.</span>
+                                        <span class="prod-profit text-green">+$920.00</span>
+                                    </div>
+                                    <div class="top-product-row">
+                                        <span class="prod-position">2</span>
+                                        <span class="prod-name">Traditional Espresso</span>
+                                        <span class="prod-sales">120 u.</span>
+                                        <span class="prod-profit text-green">+$480.00</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Panel Inventory -->
+                        <div class="sim-panel" id="panel-inventory" role="tabpanel" aria-labelledby="tab-inventory">
+                            <div class="app-screen-header">
+                                <div class="header-top">
+                                    <span class="app-title-main">Product Inventory</span>
+                                    <span class="btn-app-action">+ New</span>
+                                </div>
+                                <div class="search-bar-mock">
+                                    <span>🔍 Search products, categories...</span>
+                                </div>
+                            </div>
+                            <div class="app-screen-body">
+                                <div class="inventory-item-card">
+                                    <div class="item-main-info">
+                                        <span class="item-name">Italian Capuccino</span>
+                                        <span class="item-sku">SKU: CAP-003</span>
+                                    </div>
+                                    <div class="item-pricing-row">
+                                        <div>
+                                            <span class="lbl-small">Cost</span>
+                                            <span class="val-bold">$1.20</span>
+                                        </div>
+                                        <div>
+                                            <span class="lbl-small">Sell</span>
+                                            <span class="val-bold text-green">$3.50</span>
+                                        </div>
+                                        <div>
+                                            <span class="lbl-small">Stock</span>
+                                            <span class="val-bold">45 u.</span>
+                                        </div>
+                                        <span class="margin-badge margin-healthy">Margin: 65%</span>
+                                    </div>
+                                </div>
+
+                                <div class="inventory-item-card">
+                                    <div class="item-main-info">
+                                        <span class="item-name">Chocolate Cake</span>
+                                        <span class="item-sku">SKU: PST-012</span>
+                                    </div>
+                                    <div class="item-pricing-row">
+                                        <div>
+                                            <span class="lbl-small">Cost</span>
+                                            <span class="val-bold">$2.50</span>
+                                        </div>
+                                        <div>
+                                            <span class="lbl-small">Sell</span>
+                                            <span class="val-bold text-green">$5.00</span>
+                                        </div>
+                                        <div>
+                                            <span class="lbl-small">Stock</span>
+                                            <span class="val-bold">12 u.</span>
+                                        </div>
+                                        <span class="margin-badge margin-healthy">Margin: 50%</span>
+                                    </div>
+                                </div>
+
+                                <div class="inventory-item-card">
+                                    <div class="item-main-info">
+                                        <span class="item-name">Americano Coffee</span>
+                                        <span class="item-sku">SKU: AM-001</span>
+                                    </div>
+                                    <div class="item-pricing-row">
+                                        <div>
+                                            <span class="lbl-small">Cost</span>
+                                            <span class="val-bold">$0.60</span>
+                                        </div>
+                                        <div>
+                                            <span class="lbl-small">Sell</span>
+                                            <span class="val-bold text-green">$2.00</span>
+                                        </div>
+                                        <div>
+                                            <span class="lbl-small">Stock</span>
+                                            <span class="val-bold">90 u.</span>
+                                        </div>
+                                        <span class="margin-badge margin-healthy">Margin: 70%</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Panel Recipes -->
+                        <div class="sim-panel" id="panel-recipes" role="tabpanel" aria-labelledby="tab-recipes">
+                            <div class="app-screen-header">
+                                <div class="header-top">
+                                    <span class="app-title-main">Recipe: Capuccino</span>
+                                    <span class="btn-app-action">Edit</span>
+                                </div>
+                                <p class="header-subtitle-mock">Manufacturing recipe components (automatic deduction)</p>
+                            </div>
+                            <div class="app-screen-body">
+                                <div class="recipe-cost-summary">
+                                    <span class="cost-summary-lbl">CALCULATED COST</span>
+                                    <span class="cost-summary-val">$1.20 / unit</span>
+                                </div>
+
+                                <h5 class="section-divider-mock">INGREDIENTS / COMPONENTS</h5>
+
+                                <div class="component-list-item">
+                                    <div class="component-info">
+                                        <span class="comp-name">Coffee Beans (Arabica)</span>
+                                        <span class="comp-qty">0.015 kg</span>
+                                    </div>
+                                    <span class="comp-cost">$0.30</span>
+                                </div>
+
+                                <div class="component-list-item">
+                                    <div class="component-info">
+                                        <span class="comp-name">Whole Milk</span>
+                                        <span class="comp-qty">0.150 Liter</span>
+                                    </div>
+                                    <span class="comp-cost">$0.25</span>
+                                </div>
+
+                                <div class="component-list-item">
+                                    <div class="component-info">
+                                        <span class="comp-name">Disposable Cup + Lid</span>
+                                        <span class="comp-qty">1.0 Unit</span>
+                                    </div>
+                                    <span class="comp-cost">$0.45</span>
+                                </div>
+
+                                <div class="component-list-item">
+                                    <div class="component-info">
+                                        <span class="comp-name">Sugar Packets</span>
+                                        <span class="comp-qty">2.0 Units</span>
+                                    </div>
+                                    <span class="comp-cost">$0.20</span>
+                                </div>
+
+                                <p class="recipe-tip-mock">💡 When selling 1 Capuccino, coffee stock is reduced by 15g and milk by 150ml automatically in the inventory.</p>
+                            </div>
+                        </div>
+
+                        <!-- Panel Accounts -->
+                        <div class="sim-panel" id="panel-accounts" role="tabpanel" aria-labelledby="tab-accounts">
+                            <div class="app-screen-header">
+                                <div class="header-top">
+                                    <span class="app-title-main">Banks & Cash</span>
+                                    <span class="btn-app-action">+ Add</span>
+                                </div>
+                            </div>
+                            <div class="app-screen-body">
+                                <div class="account-card">
+                                    <div class="account-card-header">
+                                        <span class="acc-name">💸 Main Petty Cash</span>
+                                        <span class="acc-tag">Cash</span>
+                                    </div>
+                                    <span class="acc-balance">$4,850.00</span>
+                                    <p class="acc-details">Business base currency. Physical money.</p>
+                                </div>
+
+                                <div class="account-card bg-glass-blue">
+                                    <div class="account-card-header">
+                                        <span class="acc-name">🏦 BCP Checking Account</span>
+                                        <span class="acc-tag">Bank</span>
+                                    </div>
+                                    <span class="acc-balance">$10,400.00</span>
+                                    <p class="acc-details">No.: ************4567 • Available</p>
+                                </div>
+
+                                <div class="account-card bg-glass-purple">
+                                    <div class="account-card-header">
+                                        <span class="acc-name">💳 BBVA Credit Card</span>
+                                        <span class="acc-tag">Card</span>
+                                    </div>
+                                    <span class="acc-balance text-red">-$1,200.00</span>
+                                    <p class="acc-details">Used credit. Next payment: July 5th.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Panel Contacts -->
+                        <div class="sim-panel" id="panel-contacts" role="tabpanel" aria-labelledby="tab-contacts">
+                            <div class="app-screen-header">
+                                <div class="header-top">
+                                    <span class="app-title-main">Customers & Suppliers</span>
+                                    <span class="btn-app-action">+ New</span>
+                                </div>
+                                <div class="search-bar-mock">
+                                    <span>🔍 Search contact...</span>
+                                </div>
+                            </div>
+                            <div class="app-screen-body">
+                                <div class="contact-list-card">
+                                    <div class="contact-header">
+                                        <span class="c-avatar">JP</span>
+                                        <div class="c-info">
+                                            <span class="c-name">Juan Perez (Distributor)</span>
+                                            <span class="c-type">Supplier</span>
+                                        </div>
+                                    </div>
+                                    <div class="contact-balance-row">
+                                        <span class="c-balance-lbl">We owe (Payable):</span>
+                                        <span class="c-balance-val text-red">$650.00</span>
+                                    </div>
+                                </div>
+
+                                <div class="contact-list-card">
+                                    <div class="contact-header">
+                                        <span class="c-avatar">MG</span>
+                                        <div class="c-info">
+                                            <span class="c-name">Maria Gomez</span>
+                                            <span class="c-type">Customer</span>
+                                        </div>
+                                    </div>
+                                    <div class="contact-balance-row">
+                                        <span class="c-balance-lbl">They owe (Receivable):</span>
+                                        <span class="c-balance-val text-green">$120.00</span>
+                                    </div>
+                                </div>
+
+                                <div class="contact-list-card">
+                                    <div class="contact-header">
+                                        <span class="c-avatar">CO</span>
+                                        <div class="c-info">
+                                            <span class="c-name">Organic Coffee Inc.</span>
+                                            <span class="c-type">Supplier</span>
+                                        </div>
+                                    </div>
+                                    <div class="contact-balance-row">
+                                        <span class="c-balance-lbl">Balance up to date:</span>
+                                        <span class="c-balance-val text-muted">$0.00</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Interactive Profit & Margin Calculator Section -->
+        <section class="calculator-section" id="calculator">
+            <div class="calculator-wrapper">
+                <div class="calculator-info">
+                    <span class="badge-alt">Interactive Tool</span>
+                    <h2 class="section-title">Margin Calculator</h2>
+                    <p class="section-description">
+                        Determine your business's financial health. Enter your product costs and proposed selling price to see instant financial results.
+                    </p>
+                    <div class="calc-guide">
+                        <div class="guide-item">
+                            <span class="guide-bullet">📉</span>
+                            <p><strong>Low Margin (&lt; 20%):</strong> Review your costs. You may not be covering your operating expenses.</p>
+                        </div>
+                        <div class="guide-item">
+                            <span class="guide-bullet">📈</span>
+                            <p><strong>Healthy Margin (20% - 50%):</strong> Optimal margin for most retail and distribution businesses.</p>
+                        </div>
+                        <div class="guide-item">
+                            <span class="guide-bullet">💎</span>
+                            <p><strong>Excellent Margin (&gt; 50%):</strong> High return on investment. Common in services or custom manufacturing.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="calculator-card" id="interactive-calculator">
+                    <h3 class="calc-title">Simulate Your Margin</h3>
+
+                    <div class="form-group">
+                        <label for="cost-price">Cost Price ($)</label>
+                        <input type="number" id="cost-price" value="10.00" min="0" step="0.50" aria-label="Cost Price">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="sale-price">Sale Price ($)</label>
+                        <input type="number" id="sale-price" value="18.00" min="0" step="0.50" aria-label="Sale Price">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="volume-sales">Estimated Monthly Sales (units)</label>
+                        <input type="number" id="volume-sales" value="200" min="1" aria-label="Estimated Monthly Sales">
+                    </div>
+
+                    <div class="calc-divider"></div>
+
+                    <div class="calc-results">
+                        <div class="result-row">
+                            <span class="result-label">Profit per Unit:</span>
+                            <span class="result-value" id="unit-profit">$8.00</span>
+                        </div>
+                        <div class="result-row">
+                            <span class="result-label">Profit Margin:</span>
+                            <span class="result-value text-green" id="profit-margin">44.44%</span>
+                        </div>
+                        <div class="result-row">
+                            <span class="result-label">Net Monthly Profit:</span>
+                            <span class="result-value text-blue" id="monthly-profit">$1,600.00</span>
+                        </div>
+                        <div class="result-status-wrapper">
+                            <span class="status-badge margin-healthy" id="margin-status">Healthy</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="faq-section" id="faq">
+            <div class="section-header">
+                <span class="badge-alt">Common Questions</span>
+                <h2 class="section-title">Frequently Asked Questions</h2>
+                <p class="section-subtitle">Everything you need to know about BuMa.</p>
+            </div>
+
+            <div class="faq-container">
+                <div class="faq-item" id="faq-1">
+                    <button class="faq-trigger" aria-expanded="false" aria-controls="faq-answer-1">
+                        <span>Where is my data stored and how secure is it?</span>
+                        <span class="faq-icon">＋</span>
+                    </button>
+                    <div class="faq-answer" id="faq-answer-1" hidden>
+                        <p>Your data is stored locally and encrypted in your device's internal database. As a 100% offline-first app, we do not sync data to the cloud. This means no one else has access to your financial or inventory information.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" id="faq-2">
+                    <button class="faq-trigger" aria-expanded="false" aria-controls="faq-answer-2">
+                        <span>What happens if I lose or damage my phone?</span>
+                        <span class="faq-icon">＋</span>
+                    </button>
+                    <div class="faq-answer" id="faq-answer-2" hidden>
+                        <p>The app includes a <strong>Data Backup</strong> module. We recommend periodically exporting your database as a secure JSON file (you can email it to yourself, save it to Google Drive, or store it on your computer). If you switch devices, just install the app again and import that JSON file to restore all your information.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" id="faq-3">
+                    <button class="faq-trigger" aria-expanded="false" aria-controls="faq-answer-3">
+                        <span>How does the Recipe or Formula module work?</span>
+                        <span class="faq-icon">＋</span>
+                    </button>
+                    <div class="faq-answer" id="faq-answer-3" hidden>
+                        <p>This feature is ideal if you manufacture your own products (like cakes, brewed coffee, or crafts). You can create a finished product and associate a "Recipe" detailing its constituent inputs (e.g., grams of flour, packaging, etc.). When selling the finished product, the app will automatically deduct the exact proportions of the linked inputs from your inventory.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" id="faq-4">
+                    <button class="faq-trigger" aria-expanded="false" aria-controls="faq-answer-4">
+                        <span>Is the app paid or does it have ads?</span>
+                        <span class="faq-icon">＋</span>
+                    </button>
+                    <div class="faq-answer" id="faq-answer-4" hidden>
+                        <p>The basic local management app is free but contains banner ads that help us maintain development. We believe in empowering micro-entrepreneurs with high quality tools without imposing costly monthly subscriptions.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" id="faq-5">
+                    <button class="faq-trigger" aria-expanded="false" aria-controls="faq-answer-5">
+                        <span>Can I manage more than one business at a time?</span>
+                        <span class="faq-icon">＋</span>
+                    </button>
+                    <div class="faq-answer" id="faq-answer-5" hidden>
+                        <p>Yes! The app includes multi-business support. In the settings menu you can add new businesses (each with their own currency, country and taxes) and switch between them instantly without mixing transactions or inventories.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action Section -->
+        <section class="cta-banner-section" id="download">
+            <div class="cta-banner">
+                <div class="cta-banner-content">
+                    <h2 class="cta-title">Take control of your business today</h2>
+                    <p class="cta-desc">Download the app for free on your smartphone or tablet and start managing your inventory, recipes and finances without limits.</p>
+                    <div class="download-badge-row">
+                        <!-- Play Store Button -->
+                        <a href="#" class="download-badge" id="btn-play-store">
+                            <img src="assets/google.svg" alt="Google Play" class="badge-svg-icon">
+                        </a>
+                        <!-- App Store Button -->
+                        <a href="#" class="download-badge" id="btn-app-store">
+                            <img src="assets/apple.svg" alt="App Store" class="badge-svg-icon">
+                        </a>
+                        <!-- APK Direct Button -->
+                        <a href="#" class="download-badge" id="btn-apk">
+                            <img src="assets/apk.svg" alt="Direct APK" class="badge-svg-icon">
+                        </a>
+                    </div>
+                </div>
+                <div class="cta-banner-decor">
+                    <img src="assets/app_icon.png" alt="BuMa App Icon" class="decor-icon-floating">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <div class="footer-logo">
+                    <img src="assets/app_icon.png" alt="BuMa Logo" class="logo-img-small">
+                    <span>BuMa</span>
+                </div>
+                <p class="footer-tagline">The most complete, private and reliable offline business manager for your smartphone.</p>
+            </div>
+
+            <div class="footer-links-group">
+                <div class="footer-col">
+                    <span class="footer-col-title">Product</span>
+                    <a href="#features">Features</a>
+                    <a href="#simulator">App Simulator</a>
+                    <a href="#calculator">Calculator</a>
+                </div>
+                <div class="footer-col">
+                    <span class="footer-col-title">Privacy</span>
+                    <a href="terms.html">Terms of Use</a>
+                    <a href="privacy.html">Privacy Policy</a>
+                    <a href="index.html#faq">Offline Security</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 BuMa. All rights reserved. Developed locally.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="app.js"></script>
+</body>
+</html>
