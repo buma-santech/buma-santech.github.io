@@ -1448,6 +1448,25 @@ main {
     width: auto;
 }
 
+.download-badge.is-disabled {
+    cursor: default;
+    opacity: 0.55;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    pointer-events: none;
+}
+
+.download-badge.is-disabled:hover {
+    transform: none;
+    box-shadow: none;
+}
+
+.badge-note {
+    font-size: 0.75rem;
+    margin-top: 4px;
+}
+
 .cta-banner-decor {
     display: flex;
     justify-content: center;
